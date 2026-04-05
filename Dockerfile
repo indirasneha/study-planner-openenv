@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir openenv-core openai
+RUN pip install --no-cache-dir openenv-core openai fastapi uvicorn
 
 CMD ["uvicorn", "env.study_env:app", "--host", "0.0.0.0", "--port", "7860"]

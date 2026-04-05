@@ -70,7 +70,7 @@ class StudyEnv:
             "done": self.done
         }
 from fastapi import FastAPI
-from openenv import OpenEnvApp
+from openenv.app import OpenEnvApp
 
 app = FastAPI()
 env = StudyEnv()
