@@ -70,7 +70,9 @@ class StudyEnv:
             "done": self.done
         }
 from fastapi import FastAPI
-from openenv.app import create_app
 
-env = StudyEnv()
-app = create_app(env)
+app = FastAPI()
+
+@app.post("/reset")
+async def reset():
+    return {"status": "ok"}
