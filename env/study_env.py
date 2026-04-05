@@ -69,3 +69,11 @@ class StudyEnv:
             "current_plan": self.current_plan,
             "done": self.done
         }
+from fastapi import FastAPI
+from openenv import OpenEnvApp
+
+app = FastAPI()
+env = StudyEnv()
+
+openenv_app = OpenEnvApp(env)
+app.mount("/", openenv_app)
