@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir openenv-core openai fastapi uvicorn
+RUN pip install --no-cache-dir openenv openai fastapi uvicorn
 
 EXPOSE 7860
 
