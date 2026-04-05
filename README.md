@@ -1,6 +1,6 @@
 ---
 title: study-planner-env
-emoji: 📚
+emoji: book
 colorFrom: blue
 colorTo: green
 sdk: docker
