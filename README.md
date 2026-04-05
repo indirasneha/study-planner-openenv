@@ -1,11 +1,12 @@
 ---
-title: Study Planner Env
+title: study-planner-env
 emoji: 📚
 colorFrom: blue
 colorTo: green
 sdk: docker
 pinned: false
 ---
+
 # Study Planner OpenEnv
 
 ## Description
