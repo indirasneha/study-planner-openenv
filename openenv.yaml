@@ -1,0 +1,18 @@
+name: study-planner-env
+description: An environment for planning and optimizing student study schedules
+version: 0.1.0
+
+environment:
+  entrypoint: env.study_env:StudyEnv
+
+tasks:
+  - name: daily_planner
+    description: Create a 1-day study plan
+  - name: weekly_planner
+    description: Create a 7-day study plan with priorities
+  - name: adaptive_planner
+    description: Adjust study plan dynamically based on changes
+
+observation_model: env.models:StudyObservation
+action_model: env.models:StudyAction
+reward_model: env.models:StudyReward
