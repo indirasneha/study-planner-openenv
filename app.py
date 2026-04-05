@@ -2,6 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message": "Study Planner Env Running"}
+@app.post("/reset")
+async def reset():
+    return {"status": "ok"}
