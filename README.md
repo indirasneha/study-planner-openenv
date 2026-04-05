@@ -1,6 +1,6 @@
 ---
 title: study-planner-env
-emoji: book
+emoji: 📘
 colorFrom: blue
 colorTo: green
 sdk: python
